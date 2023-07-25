@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Route, Routes, useLocation, Link, Navigate } from 'react-router-dom';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
-import Home from './Home';
-import About from './About';
-import Links from './Links';
-import styles from './App.module.css';
+import Home from './components/Home';
+import About from './components/About';
+import Links from './components/Links';
+import styles from './css/App.module.css';
 import { useEffect } from 'react';
 
 function PageTitleUpdater() {
