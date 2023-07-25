@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes, useLocation, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation, Link, Navigate } from 'react-router-dom';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import Home from './Home';
 import About from './About';
@@ -47,6 +47,7 @@ function RoutesWithTransition() {
                     <Route path="/about" element={<About />} />
                     <Route path="/links" element={<Links />} />
                     <Route path="/" element={<Home />} />
+                    <Route path="*" element={<Navigate to="/" />} />  {/* Redirect to home page */}
                 </Routes>
             </CSSTransition>
         </SwitchTransition>
