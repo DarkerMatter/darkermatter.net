@@ -1,8 +1,13 @@
+import React from 'react';
+import styles from './App.module.css';
+
 function Home() {
     return (
-        <div>
-            <h2>Welcome!</h2>
-            <p>I really don't know what im doing here lol</p>
+        <div className={styles.app}>
+            <div className={styles.homeContainer}>
+                <h1>Welcome to DarkerMatter!</h1>
+                <p>This is the home page of DarkerMatter, a <span style={{color: 'yellow'}}>17</span>-year-old JS web developer.</p>
+            </div>
         </div>
     );
 }

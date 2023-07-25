@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes, useLocation, Link } from 'react-router-dom';
+import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import Home from './Home';
 import About from './About';
 import Links from './Links';
@@ -20,20 +21,35 @@ function App() {
     return (
         <Router>
             <PageTitleUpdater />
-            <div className={styles.app}>
-                <nav className={styles.nav}>
-                    <Link className={styles.button} to="/">home</Link>
-                    <Link className={styles.button} to="/about">about</Link>
-                    <Link className={styles.button} to="/links">links</Link>
-                </nav>
+            <Navigation />
+            <RoutesWithTransition />
+        </Router>
+    );
+}
 
-                <Routes>
+function Navigation() {
+    return (
+        <nav className={styles.nav}>
+            <Link className={styles.button} to="/">home</Link>
+            <Link className={styles.button} to="/about">about</Link>
+            <Link className={styles.button} to="/links">links</Link>
+        </nav>
+    );
+}
+
+function RoutesWithTransition() {
+    const location = useLocation();  // Define location here
+
+    return (
+        <SwitchTransition>
+            <CSSTransition key={location.key} classNames="fade" timeout={300}>
+                <Routes location={location}>
                     <Route path="/about" element={<About />} />
                     <Route path="/links" element={<Links />} />
                     <Route path="/" element={<Home />} />
                 </Routes>
-            </div>
-        </Router>
+            </CSSTransition>
+        </SwitchTransition>
     );
 }
 
