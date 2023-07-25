@@ -5,7 +5,7 @@ function Home() {
     return (
         <div className={styles.app}>
             <div className={styles.homeContainer}>
-                <h1>Welcome to DarkerMatter!</h1>
+                <h1>Welcome to my site!</h1>
                 <p>This is the home page of DarkerMatter, a <span style={{color: 'yellow'}}>17</span>-year-old JS web developer.</p>
             </div>
         </div>
