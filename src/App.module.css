@@ -121,7 +121,7 @@
     }
 }
 
-.homeContainer, .aboutContainer {
+.homeContainer, .aboutContainer, .linksContainer {
     /* ...existing styles... */
     animation: fadeInUp 700ms ease-out;
 }
@@ -159,7 +159,10 @@
 /* Media query for screens narrower than 768px */
 @media (max-width: 768px) {
     .linksContainer {
-        width: 90
+        width: 90%;
+    }
+    .linkButton {
+        width: 90%;
     }
 }
 
