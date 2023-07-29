@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../css/App.module.css';
 
+// About is a component that renders the about page.
 function About() {
     return (
         <div className={styles.app}>
