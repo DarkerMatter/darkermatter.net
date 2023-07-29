@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../css/App.module.css';
 
+// Home is a component that renders the home page.
 function Home() {
     return (
         <div className={styles.app}>
