@@ -6,6 +6,7 @@ import Links from './components/Links';
 import styles from './css/App.module.css';
 import { useEffect } from 'react';
 
+// Page title updater is a component that updates the page title based on the current path.
 function PageTitleUpdater() {
     const location = useLocation();
 
@@ -17,6 +18,7 @@ function PageTitleUpdater() {
     return null;  // This component doesn't render anything
 }
 
+// Page title updater is a component that updates the page title based on the current path.
 function App() {
     return (
         <Router>
@@ -27,6 +29,7 @@ function App() {
     );
 }
 
+// Navigation is a component that renders the navigation bar.
 function Navigation() {
     return (
         <nav className={styles.nav}>
@@ -37,6 +40,7 @@ function Navigation() {
     );
 }
 
+// RoutesWithTransition is a component that renders the routes with a transition.
 function RoutesWithTransition() {
     const location = useLocation();  // Define location here
 
@@ -53,5 +57,5 @@ function RoutesWithTransition() {
         </SwitchTransition>
     );
 }
-
+// And I OOP
 export default App;
