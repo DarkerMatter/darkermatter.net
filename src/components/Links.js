@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../css/App.module.css';
 
 // Links is a component that renders the about links.
-// I Lowkey don't like this, but it's the only way to do it without a bunch of CSS
+// I Lowkey don't like this, but it's the only way to do it without a bunch of CSS.
 function Links() {
     const links = [
         { name: 'Discord', url: 'https://discordapp.com/users/darkermatter' },
