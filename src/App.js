@@ -20,6 +20,7 @@ function PageTitleUpdater() {
 
 // Page title updater is a component that updates the page title based on the current path.
 function App() {
+    console.log('Thanks for checking out my site! You can find the GitHub Repo at https://github.com/DarkerMatter/darkermatter.net')
     return (
         <Router>
             <PageTitleUpdater />
