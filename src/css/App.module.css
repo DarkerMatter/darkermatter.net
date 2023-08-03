@@ -1,13 +1,13 @@
 /* If you can make it better, please do! */
 .app {
-    background-color: #282c34;  /* greyish black */
+    background-color: #1f2226;  /* greyish black */
     color: white;  /* white text */
     font-size: 20px;  /* larger text */
     text-align: center;
 }
 
 .nav {
-    background-color: #282c34;
+    background-color: #1f2226;
     display: flex;
     justify-content: center;
     padding: 20px 0;
@@ -63,7 +63,7 @@
 .aboutContainer {
     width: 40%;  /* default width for larger screens */
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgb(39, 42, 47);
     border-radius: 10px;
     padding: 20px;
     box-sizing: border-box;
@@ -79,7 +79,7 @@
 .homeContainer {
     width: 40%;  /* default width for larger screens */
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgb(39, 42, 47);
     border-radius: 10px;
     padding: 20px;
     box-sizing: border-box;
@@ -130,7 +130,7 @@
 .linksContainer {
     width: 40%;
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgb(39, 42, 47);
     border-radius: 10px;
     padding: 20px;
     box-sizing: border-box;
