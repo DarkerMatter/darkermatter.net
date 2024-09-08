@@ -3,7 +3,6 @@ import styles from '../css/App.module.css';
 import '@fontsource-variable/montserrat';
 
 function Home() {
-    const ageStyle = { color: 'yellow' };
     const imgSrc = `${process.env.PUBLIC_URL}/catlogo.png`;
 
     return (
