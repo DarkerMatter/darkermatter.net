@@ -4,6 +4,7 @@
     color: white;  /* white text */
     font-size: 20px;  /* larger text */
     text-align: center;
+    font-family: 'Montserrat Variable', sans-serif;
 }
 
 .nav {

@@ -12,7 +12,7 @@ function PageTitleUpdater() {
 
     useEffect(() => {
         const currentPath = location.pathname.substring(1);
-        document.title = currentPath ? `DarkerMatter | ${currentPath.charAt(0).toUpperCase() + currentPath.slice(1)}` : 'DarkerMatter';
+        document.title = currentPath ? `Adrian Tamayo | ${currentPath.charAt(0).toUpperCase() + currentPath.slice(1)}` : 'Adrian Tamayo';
     }, [location]);
 
     return null;  // This component doesn't render anything
@@ -20,7 +20,7 @@ function PageTitleUpdater() {
 
 // Page title updater is a component that updates the page title based on the current path.
 function App() {
-    console.log('Thanks for checking out my site! You can find the GitHub Repo at https://github.com/DarkerMatter/darkermatter.net')
+    console.log('Thanks for checking out my site! Made by Dimitri Shepherd. You can find the GitHub Repo at https://github.com/DarkerMatter/tamayooo.com')
     return (
         <Router>
             <PageTitleUpdater />

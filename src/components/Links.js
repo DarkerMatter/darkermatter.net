@@ -5,7 +5,7 @@ import styles from '../css/App.module.css';
 // I Lowkey don't like this, but it's the only way to do it without a bunch of CSS.
 function Links() {
     const links = [
-        { name: 'Discord', url: 'https://discordapp.com/users/darkermatter' },
+        { name: 'instagram', url: 'https://discordapp.com/users/darkermatter' },
         { name: 'Discord Server', url: 'https://darker.systems/discord' },
         { name: 'Github', url: 'https://github.com/DarkerMatter' },
         { name: 'FTS', url: 'https://fts.gg' },

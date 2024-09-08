@@ -1,13 +1,19 @@
 import React from 'react';
 import styles from '../css/App.module.css';
+import '@fontsource-variable/montserrat';
 
-// Home is a component that renders the home page.
 function Home() {
+    const ageStyle = { color: 'yellow' };
+    const imgSrc = `${process.env.PUBLIC_URL}/catlogo.png`;
+
     return (
         <div className={styles.app}>
             <div className={styles.homeContainer}>
-                <h1>Welcome to my site!</h1>
-                <p>This is the home page of DarkerMatter, a <span style={{color: 'yellow'}}>18</span>-year-old JS web developer.</p>
+                <h1 aria-label="Adrian Tamayo">adrian tamayo</h1>
+                <p>
+                    i play music sometimes
+                </p>
+                <img src={imgSrc} alt="Cat Logo" className={styles.logo} />
             </div>
         </div>
     );

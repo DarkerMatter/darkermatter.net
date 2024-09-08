@@ -1,9 +1,9 @@
 {
   "short_name": "DarkerMatter",
-  "name": "DarkerMatter.Net, Because I needed a site",
+  "name": "Adrian Tamayo, great fucking question.",
   "icons": [
     {
-      "src": "logo.png",
+      "src": "catlogo.png",
       "type": "image/png",
       "sizes": "512x512"
     }
